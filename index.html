@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bennie's Barber Shop</title>
+
+        <!------------style for the rest of the pages-------------->
+        <link rel="stylesheet" href="style.css" />
+
+        <!----------styling for list items------------------->
+        <style>
+            /*style for menu items i.e top right titles */
+            nav ul {
+                display: flex; /* put in a line*/
+                list-style: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            nav ul li {
+                padding: 30px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: rgb(216, 3, 3);
+                position: relative;
+                font-size: 20px;
+            }
+
+            nav ul li a::after {
+                content: '';
+                width: 0; /*width initially 0*/
+                height: 3px;
+                background: blanchedalmond; /*underline color*/
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                transition: 0.5s;
+            }
+
+            nav ul li a:hover::after {
+                width: 100%; /*expand width to 100% after hover efffect*/
+            }
+        </style>
+
+        <!-----font-awesome-icons-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha384-XX..."
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!--------------------------Header------------------------------->
+        <div class="head" id="header">
+            <a href="#home">
+                <img class="logo" src="Images/logo2.jpg" alt="logo-image" />
+            </a>
+            <nav>
+                <ul id="menu-tems" class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!------------------------Home-------------------------------->
+
+        <div id="home">
+            <div class="home-text">
+                <p>Bennie's Barber Shop</p>
+                <h1>Snip, Style, Smile</h1>
+                <div>
+                    <a href="#contact"
+                        ><button type="submit" class="btn">
+                            Book Appointment
+                        </button></a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------------About---------------------------->
+
+        <div id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="Images/about.jpg" alt="Bennie-shop-image" />
+                </div>
+                <div class="about-us">
+                    <h1 class="about-sub-title">About Us</h1>
+                    <p>
+                        Bennie's Barber Shop was established at downtown Boston
+                        in 1964 by Philip Upshaw. Philip had the dream that this
+                        place would become a symbol of class and it will foster
+                        community bonding. In his old age and wits, he
+                        envisioned that that this shop would exemplify the art
+                        of barbering.It has maintianed its class and aesthetic
+                        seamlessly blending tradition with modern elegance.
+                        Despite the passage of time, Bennie's Barber Shop has
+                        remained committed to its core values of quality,
+                        integrity, and customer satisfaction. The shop has
+                        become a community beacon, attracting a diverse client
+                        seeking more than just a haircut, but a grooming
+                        experience enriched with warmth, and attention to
+                        detail.Bennie's continues to be cherished by both who
+                        appreciate old school trends and modern contemporary
+                        trends. Bennie's Barber Shop is not just a place for
+                        grooming, it's a sanctuary of style, a celebration of
+                        heritage, and a timeless symbol of community bonding.
+                        Book with us to continue supporting and mantaining this
+                        shop's rich heritage
+                    </p>
+                </div>
+
+                <!------------------------the team ---------------------->
+                <div class="team-title">
+                    <h1>Meet the Family</h1>
+                </div>
+                <div class="team">
+                    <div class="barber">
+                        <img src="Images/barber2.jpg" alt="barber1-image" />
+                        <h1>Benard Upshaw</h1>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i> </a>
+                            <a href="#"><i class="fab fa-facebook"></i> </a>
+                        </div>
+                    </div>
+                    <div class="barber">
+                        <img src="Images/barber6.jpg" alt="barber1-image" />
+                        <h1>Ethan Rummler</h1>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i> </a>
+                            <a href="#"><i class="fab fa-facebook"></i> </a>
+                        </div>
+                    </div>
+                    <div class="barber">
+                        <img src="Images/barber4.jpg" alt="barber1-image" />
+                        <h1>Maya Smith</h1>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i> </a>
+                            <a href="#"><i class="fab fa-facebook"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------Services--------------------->
+
+        <div id="service">
+            <div class="service-title">
+                <h1>Our Services</h1>
+            </div>
+            <div class="image-box">
+                <div class="s-image">
+                    <a href="#contact">
+                        <img
+                            src="Images/haircut.jpg"
+                            alt="man-getting-hair-cut"
+                        />
+                    </a>
+                    <div class="service-text">
+                        Haircuts <br />
+                        $60
+                    </div>
+                </div>
+                <div class="s-image">
+                    <a href="#contact"
+                        ><img
+                            src="Images/facial2.jpg"
+                            alt="man-getting-hair-cut"
+                    /></a>
+                    <div class="service-text">
+                        Facials <br />
+                        $70
+                    </div>
+                </div>
+                <div class="s-image">
+                    <a href="#contact">
+                        <img
+                            src="Images/hair-treat.jpg"
+                            alt="man-getting-hair-cut"
+                        />
+                    </a>
+                    <div class="service-text">
+                        Hair Treatment <br />
+                        $50
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------contact------------------------>
+
+        <div id="contact">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <div class="contact-details">
+                        <div class="contact-title">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a
+                                    href="malto:jondoe@gmail.com"
+                                    class="contact-icons"
+                                    ><i class="fas fa-paper-plane"></i
+                                ></a>
+                                benniebarbershop@gmail.com
+                            </p>
+                            <p>
+                                <a href="tel:+17812569990" class="contact-icons"
+                                    ><i class="fas fa-mobile-alt"></i
+                                ></a>
+                                (+1) (781)-256-9990
+                            </p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="/submit" method="POST">
+                        <input
+                            type="text"
+                            name="Name"
+                            id="name"
+                            placeholder="Enter your Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="Email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <input type="date" name="Date" id="date" required />
+                        <input type="time" name="Time" id="time" required />
+                        <select name="Service" id="service">
+                            <option value="service-1">Haircut</option>
+                            <option value="service-2">Hair-treatment</option>
+                            <option value="service-3">Facial</option>
+                        </select>
+                        <textarea
+                            name="Message"
+                            id="message"
+                            cols="6"
+                            placeholder="Do you have any message for us?"
+                        ></textarea>
+                        <button type="submit" class="btn-2">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------footer-------------------->
+        <footer class="footer">@copyright Bennie's Barber Shop</footer>
+    </body>
+</html>
