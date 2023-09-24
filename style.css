@@ -11,6 +11,7 @@ html {
 
 body {
     background: rgba(0, 0, 0);
+    overflow-x: hidden;
 }
 
 /*Style for header of the website*/
