@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bennie's Barber Shop</title>
+
+        <!------------style for the rest of the pages-------------->
+        <link rel="stylesheet" href="style.css" />
+
+        <!----------styling for list items------------------->
+        <style>
+            /*style for menu items i.e top right titles */
+            nav ul {
+                display: flex; /* put in a line*/
+                list-style: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            nav ul li {
+                padding: 30px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: rgb(216, 3, 3);
+                position: relative;
+                font-size: 22px;
+            }
+
+            nav ul li a::after {
+                content: '';
+                width: 0; /*width initially 0*/
+                height: 3px;
+                background: blanchedalmond; /*underline color*/
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                transition: 0.5s;
+            }
+
+            nav ul li a:hover::after {
+                width: 100%; /*expand width to 100% after hover efffect*/
+            }
+        </style>
+
+        <!-----font-awesome-icons-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha384-XX..."
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!--------------------------Header------------------------------->
+        <div class="head" id="header">
+            <a href="index.html">
+                <img class="logo" src="Images/logo2.jpg" alt="logo-image" />
+            </a>
+            <nav>
+                <ul id="menu-tems" class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--------------------------------contact------------------------>
+
+        <div id="contact">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <div class="contact-details">
+                        <div class="contact-title">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a
+                                    href="malto:jondoe@gmail.com"
+                                    class="contact-icons"
+                                    ><i class="fas fa-paper-plane"></i
+                                ></a>
+                                bennieshop@gmail.com
+                            </p>
+                            <p>
+                                <a href="tel:+17812569990" class="contact-icons"
+                                    ><i class="fas fa-mobile-alt"></i
+                                ></a>
+                                (+1) (781)-256-9990
+                            </p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="/submit" method="POST">
+                        <input
+                            type="text"
+                            name="Name"
+                            id="name"
+                            placeholder="Enter your Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="Email"
+                            id="email"
+                            placeholder="Enter your Email"
+                            required
+                        />
+                        <input type="date" name="Date" id="date" required />
+                        <input type="time" name="Time" id="time" required />
+                        <select name="Service" id="service">
+                            <option value="service-1">Haircut</option>
+                            <option value="service-2">Hair-treatment</option>
+                            <option value="service-3">Facial</option>
+                        </select>
+                        <textarea
+                            name="Message"
+                            id="message"
+                            cols="6"
+                            placeholder="Do you have any message for us?"
+                        ></textarea>
+                        <button type="submit" class="btn-2">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------footer-------------------->
+        <footer class="footer">copyright &copy;Bennie's Barber Shop</footer>
+    </body>
+</html>

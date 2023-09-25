@@ -88,7 +88,7 @@ body {
 /*-----------------------------------about page styling---------------------*/
 
 #about {
-    padding-top: 10%;
+    padding-top: 2%;
 }
 .about-container {
     display: flex;
@@ -141,7 +141,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5%;
-    padding-left: 9%;
+    padding-left: 4%;
     padding-right: 4%;
     width: 100%;
 }
@@ -192,6 +192,7 @@ body {
 }
 
 .service-title {
+    font-size: 25px;
     width: 100%;
     color: rgb(150, 2, 2);
     width: 100%;
@@ -329,7 +330,8 @@ body {
     width: 100%;
     color: rgb(150, 2, 2);
     width: 100%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
+    font-size: 22px;
 }
 .footer {
     color: rgb(150, 2, 2);
@@ -425,6 +427,45 @@ body {
     .btn-2 {
         font-size: 16px;
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .image-box {
+        flex-direction: column;
+    }
+
+    .service-title {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .s-image {
+        padding-bottom: 5%;
+    }
+
+    .s-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-text {
+        font-size: 30px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        padding-bottom: 5%;
+        padding-left: 4%;
+        flex-basis: 100%;
+    }
+
+    .contact-right {
+        margin-bottom: 5%;
+        flex-basis: 100%;
     }
 }
 
