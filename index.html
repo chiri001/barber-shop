@@ -1,3 +1,4 @@
+<!--Written by Rennie Kipchirchir on 09/25/23------------------->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,21 +13,21 @@
         <style>
             /*style for menu items i.e top right titles */
             nav ul {
-                display: flex; /* put in a line*/
+                display: flex; /* put in a horizontal line*/
                 list-style: none;
-                position: absolute;
+                position: absolute; /*helps so as to positon list top right */
                 top: 0;
                 right: 0;
             }
 
             nav ul li {
-                padding: 30px;
+                padding: 30px; /*padding for menu items*/
             }
 
             nav ul li a {
                 text-decoration: none;
                 color: rgb(216, 3, 3);
-                position: relative;
+                position: relative; /*keeps menu items at positon*/
                 font-size: 22px;
             }
 
@@ -35,7 +36,7 @@
                 width: 0; /*width initially 0*/
                 height: 3px;
                 background: blanchedalmond; /*underline color*/
-                position: absolute;
+                position: absolute; /*allows adjustment of the line*/
                 left: 0;
                 bottom: -6px;
                 transition: 0.5s;

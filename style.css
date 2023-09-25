@@ -1,3 +1,4 @@
+/*--Written by Rennie Kipchirchir on 09/25/23-------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -24,11 +25,14 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/*log image styling*/
 .logo {
     width: 10%;
     height: auto;
     padding: 0.5%;
 }
+
+/*no style for the list items in menu*/
 .menu {
     list-style: none;
 }
@@ -37,21 +41,21 @@ body {
 
 #home {
     position: relative;
-    background-image: url(Images/home1.jpg);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(Images/home1.jpg); /*adds background image to page*/
+    width: 100%; /*cover entire page width*/
+    height: 100vh; /*adjust to visible height of the page*/
+    background-size: cover; /*to allow even scaling depending on page size*/
+    background-position: center; /*puts scale focus to center*/
+    background-repeat: no-repeat; /*display image only once*/
 }
 
 .home-text {
-    display: flex;
-    align-items: center;
+    display: flex; /*align-items horizontally*/
+    align-items: center; /*positon items at center*/
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /*align items vertically now */
     min-height: 100vh;
-    text-align: center;
+    text-align: center; /*center the text*/
 }
 
 /*Styling the name of the business*/
@@ -73,11 +77,11 @@ body {
 .btn {
     margin-top: 40px;
     background-color: rgb(150, 2, 2);
-    border-radius: 10px;
+    border-radius: 10px; /*remove sharp vertices*/
     font-size: 20px;
-    color: rgba(255, 235, 205, 0.894);
-    padding: 15px 30px;
-    cursor: pointer;
+    color: rgba(255, 235, 205, 0.894); /*button-text color*/
+    padding: 15px 30px; /*space text from edges*/
+    cursor: pointer; /*chnages pointer to hand icos */
     transition: background-color 0.3s; /*for smooth transition*/
 }
 
@@ -88,37 +92,43 @@ body {
 /*-----------------------------------about page styling---------------------*/
 
 #about {
-    padding-top: 2%;
-}
-.about-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding-top: 2%; /*space from the top*/
 }
 
+/*styling the about container */
+.about-container {
+    display: flex; /*align items horizontally*/
+    justify-content: space-between; /*put space between items */
+    flex-wrap: wrap; /*to help adjust between horizontal and column alignment*/
+}
+
+/*styling the barber shop's about image */
 .about-img {
-    flex-basis: 30%;
-    padding-left: 4%;
+    flex-basis: 30%; /*cover 30% of page */
+    padding-left: 4%; /*pading from edges*/
     padding-top: 5%;
 }
 
 .about-img img {
     width: 80%;
     height: auto;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px; /*curve top right of image */
+    border-bottom-right-radius: 200px; /*curve bottom right of image */
 }
 
+/*styling the about us information*/
 .about-us {
-    flex-basis: 60%;
+    flex-basis: 60%; /*cover 60% of page */
 }
+
 .about-sub-title {
     color: rgb(150, 2, 2);
     font-weight: bold;
     font-size: 50px;
-    text-align: center;
+    text-align: center; /*move text center of div box*/
     width: 80%;
 }
+
 .about-us p {
     color: rgba(255, 235, 205, 0.894);
     padding-top: 5%;
@@ -126,9 +136,11 @@ body {
     font-size: 20px;
 }
 
+/*style for the team part in about page */
+
 .team-title {
     width: 100%;
-    text-align: center;
+    text-align: center; /*puts text center of page */
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -138,8 +150,8 @@ body {
 }
 
 .team {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*align items horizontally */
+    justify-content: space-between; /*space items*/
     padding-bottom: 5%;
     padding-left: 4%;
     padding-right: 4%;
@@ -147,19 +159,20 @@ body {
 }
 
 .barber {
-    flex-grow: 1;
+    flex-grow: 1; /*ensure every item in the div box take up equal space*/
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; /*make items align horizontally*/
 }
 
+/*styling barber's images */
 .barber img {
-    border-radius: 50%;
+    border-radius: 50%; /*make the images round */
     width: 60%;
     height: 60%;
     object-position: top; /*to show object fit where to start cover*/
-    object-fit: cover;
-    display: block;
+    object-fit: cover; /*resizes images while mantaining its ratio*/
+    display: block; /*evenly stretches width of image in relation to screen*/
 }
 
 .barber h1 {
@@ -167,6 +180,7 @@ body {
     margin-top: 10px;
 }
 
+/*style thse barber's social icons */
 .fab {
     margin-top: 30px;
 }
@@ -175,22 +189,23 @@ body {
     font-size: 30px;
     margin-right: 15px;
     color: rgb(150, 2, 2);
-
-    display: inline-block;
-    transition: transform 0.5s;
+    display: inline-block; /*allows me to tweak icon layout*/
+    transition: transform 0.5s; /*any change to icon layout takes this time*/
 }
 
+/*adds hover efeect to the social icons*/
 .social-icons a:hover {
     color: rgb(247, 8, 8);
-    transform: translateY(-5px);
+    transform: translateY(-5px); /*moves icon 5 pixels up along y-axis*/
 }
 
-/*---------services--------*/
+/*-------------------------------services--------------------------------*/
 
 #service {
     position: relative;
 }
 
+/*styling the title of the page*/
 .service-title {
     font-size: 25px;
     width: 100%;
@@ -202,36 +217,37 @@ body {
 
 .image-box {
     display: flex;
-    justify-content: space-between;
-    padding: 0 4%;
+    justify-content: space-between; /*align items center and spaced*/
+    padding: 0 4%; /*only padd left and right*/
 }
 .s-image {
-    position: relative;
-    flex: 1;
+    position: relative; /*allows me to postion text relative to image*/
+    flex: 1; /*grow and shrink evenly*/
     padding: 2%;
 }
 
 .s-image img {
-    border-radius: 5px;
+    border-radius: 5px; /*remove sharp vertices*/
     width: 100%;
     height: 100%;
     object-position: top; /*to show object fit where to start cover*/
     object-fit: cover;
-    display: block;
+    display: block; /*evenly stretch the image*/
 }
 
 .s-image img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s;
+    transform: scale(1.1); /*icrease image dimensons by 110%*/
+    transition: transform 0.3s; /*transfom time taken*/
 }
 
+/*styling for text inside the service image*/
 .service-text {
-    position: absolute;
+    position: absolute; /*enables to shift postions relative to image*/
     color: rgb(150, 2, 2);
     font-size: 24px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; /*set text to 50% of image*/
+    transform: translate(-50%, -50%); /*always center the text in the image */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     width: 50%;
@@ -239,42 +255,29 @@ body {
     border-radius: 5px;
 }
 
-/*-----------------------------scontact--------------------*/
+/*-----------------------------contact--------------------*/
 
+/*styling for contact page*/
 #contact {
     padding-top: 5%;
 }
 .contact-box {
     display: flex;
-    justify-content: center;
+    justify-content: center; /*siplay horizontal and spaced*/
     flex-wrap: wrap; /*components to be arranged verticall on snmall screen*/
     padding: 0 4%;
 }
-.contact-left {
-    flex-basis: 35%;
-}
 
-.contact-right {
-    flex-basis: 60%;
-}
-
-.contact-right form {
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    gap: 10px;
-    font-size: 30px;
-}
-
-.contact-right form input,
-.contact-right form select,
-.contact-right form textarea {
+.contact-title {
     width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(255, 235, 205, 0.894);
-    border-radius: 6px;
-    font-size: 18px;
-    background: rgba(255, 235, 205, 0.894);
+    color: rgb(150, 2, 2);
+    width: 100%;
+    padding-bottom: 2%;
+    font-size: 22px;
+}
+
+.contact-left {
+    flex-basis: 35%; /*left side take only 35% of page*/
 }
 
 .contact-left p {
@@ -286,21 +289,57 @@ body {
     font-size: 25px;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: column; /*put contact-;eft items to align vertically*/
+}
+.contact-info p {
+    color: rgb(150, 2, 2);
+    font-size: 20px;
+}
+
+/*stylinh for contact-icons i.e phone icon */
 .contact-icons {
-    text-decoration: none;
+    text-decoration: none; /*remove text decorations*/
     font-size: 30px;
     margin-right: 15px;
     color: rgb(150, 2, 2);
-    display: inline-block;
+    display: inline-block; /*enables adjustment of icon layout*/
     transition: transform 0.5s;
-    vertical-align: middle;
+    vertical-align: middle; /*align icons with text vertically*/
 }
 
 .contact-icons:hover {
     color: rgb(247, 8, 8);
-    transform: translateY(-5px);
+    transform: translateY(-5px); /*move up 5px*/
 }
 
+.contact-right {
+    flex-basis: 60%; /*right take 60% of page*/
+}
+
+/*styling for form */
+.contact-right form {
+    display: flex;
+    flex-direction: column; /*align form items vertically*/
+    padding: 3%;
+    gap: 10px;
+    font-size: 30px;
+}
+
+/*styling for inside the bozes of the form items */
+.contact-right form input,
+.contact-right form select,
+.contact-right form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 235, 205, 0.894);
+    border-radius: 6px;
+    font-size: 18px;
+    background: rgba(255, 235, 205, 0.894);
+}
+
+/*styling for the submit button for the form*/
 .btn-2 {
     margin-top: 20px;
     background-color: rgb(150, 2, 2);
@@ -308,7 +347,7 @@ body {
     font-size: 18px;
     color: rgba(255, 235, 205, 0.894);
     padding: 15px 30px;
-    cursor: pointer;
+    cursor: pointer; /*mouse to hand pointer upon hover*/
     transition: background-color 0.3s; /*for smooth transition*/
     width: 40%;
 }
@@ -317,22 +356,8 @@ body {
     background-color: rgb(247, 8, 8);
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-}
-.contact-info p {
-    color: rgb(150, 2, 2);
-    font-size: 20px;
-}
+/*-----------------------------------footer---------------------------*/
 
-.contact-title {
-    width: 100%;
-    color: rgb(150, 2, 2);
-    width: 100%;
-    padding-bottom: 2%;
-    font-size: 22px;
-}
 .footer {
     color: rgb(150, 2, 2);
     width: 100%;
@@ -341,9 +366,10 @@ body {
     font-size: 16px;
 }
 
+/*styling for a screen size 1050 px wide or small */
 @media only screen and (max-width: 1050px) {
     nav ul li a {
-        font-size: 20px !important;
+        font-size: 20px !important; /*overide anyting overiding this style*/
     }
 
     nav ul li {
@@ -367,7 +393,7 @@ body {
     }
 
     .about-img img {
-        width: 90%;
+        width: 90%; /*adjust width to 90% of div box */
     }
 
     .team-title {
@@ -430,9 +456,10 @@ body {
     }
 }
 
+/*for screens 900px or smaller*/
 @media only screen and (max-width: 900px) {
     .image-box {
-        flex-direction: column;
+        flex-direction: column; /*make items align vertically not horizontal*/
     }
 
     .service-title {
@@ -454,32 +481,42 @@ body {
     }
 
     .contact-box {
-        flex-direction: column;
+        flex-direction: column; /*align items vertical*/
     }
 
     .contact-left {
         padding-bottom: 5%;
         padding-left: 4%;
-        flex-basis: 100%;
+        flex-basis: 100%; /*item now takes 100% width of the div box not 35%*/
     }
 
     .contact-right {
         margin-bottom: 5%;
-        flex-basis: 100%;
+        flex-basis: 100%; /*item now takes 100% width of the div box not 65%*/
+    }
+
+    .contact-info p {
+        font-size: 22px;
+    }
+
+    .contact-icons {
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+    .social-icons a {
+        font-size: 25px;
     }
 }
 
+/*for screen size 650px or small */
 @media only screen and (max-width: 650px) {
     .about-img {
-        flex-basis: 100%;
+        flex-basis: 100%; /*take full width div box*/
     }
     .about-img img {
-        width: 100%;
+        width: 90%; /*cover 90% width of the div box */
         border-radius: 10px;
-    }
-
-    .about-img img {
-        width: 90%;
     }
 
     .about-us {
@@ -492,13 +529,14 @@ body {
 
     .about-us p {
         width: 100%;
-        margin-right: 4%;
+        margin-right: 4%; /*space 4% from right*/
     }
 }
 
+/*for screens 500ps or smaller */
 @media only screen and (max-width: 500px) {
     nav ul li a {
-        font-size: 15px !important;
+        font-size: 15px !important; /*override style for this before */
     }
 
     nav ul li {
@@ -506,7 +544,7 @@ body {
     }
 
     .logo {
-        height: auto;
+        height: auto; /*adjust height accordingly */
         width: 15%;
     }
 
@@ -559,9 +597,10 @@ body {
     .service-title {
         padding-top: 10%;
         padding-bottom: 10%;
+        font-size: 18px;
     }
     .image-box {
-        flex-direction: column;
+        flex-direction: column; /*align items vertically*/
     }
 
     .s-image {
@@ -580,10 +619,6 @@ body {
         font-size: 20px;
     }
 
-    .contact-info p i {
-        font-size: 25px;
-    }
-
     .contact-icons {
         font-size: 15px;
         margin-right: 5px;
@@ -595,11 +630,11 @@ body {
 
     .contact-left {
         flex-basis: 100%;
-        padding: 4%;
+        padding: 6%;
     }
 
     .contact-right {
-        flex-basis: 100%;
+        flex-basis: 100%; /*100% width of div box*/
         padding: 4%;
     }
 
@@ -609,7 +644,7 @@ body {
 
     .btn-2 {
         font-size: 15px;
-        padding: 15px 20px;
+        padding: 15px 20px; /*reduce inner padding of button*/
         width: 60%;
     }
 }
